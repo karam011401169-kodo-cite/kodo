@@ -84,8 +84,11 @@ form{padding:28px 24px;display:flex;flex-direction:column;gap:22px}
 .wa{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;background:linear-gradient(110deg,#25D366,#00875A);color:#fff;box-shadow:0 10px 28px rgba(37,211,102,.4)}
 .x{position:absolute;top:12px;left:14px;background:none;border:0;color:var(--mut);font-size:1.6rem;cursor:pointer;line-height:1}
 .x:hover{color:var(--gold)}
-footer{position:fixed;bottom:0;right:0;left:0;z-index:40;text-align:center;padding:14px 90px 14px 90px;font-weight:600;font-size:.88rem;background:rgba(8,12,20,.6);backdrop-filter:blur(20px) saturate(180%);border-top:1px solid rgba(255,230,0,.3);box-shadow:0 -6px 30px rgba(255,230,0,.08)}
-@media(max-width:420px){footer{font-size:.74rem;padding:12px 80px 12px 14px}.fab{bottom:18px;left:16px}}
+footer{position:fixed;bottom:0;right:0;left:0;z-index:40;text-align:center;padding:14px 100px;font-weight:600;font-size:.88rem;background:rgba(8,12,20,.6);backdrop-filter:blur(20px) saturate(180%);border-top:1px solid rgba(255,230,0,.3);box-shadow:0 -6px 30px rgba(255,230,0,.08)}
+footer span,footer .ph{display:inline-block}
+@media(max-width:600px){footer{padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));font-size:.85rem;line-height:1.7}
+footer .sep{display:none}footer .ph{display:block;color:var(--gold);letter-spacing:.06em;font-weight:800}
+.fab{bottom:88px;left:16px;width:50px;height:50px}body{padding-bottom:130px}#toast{bottom:150px}}
 @media(min-width:1600px){.wrap{max-width:680px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important}}
 @media print{body{background:#fff}body>*:not(#badgeArea):not(.wrap){display:none!important}.wrap>*:not(#badgeArea){display:none!important}.acts{display:none}#badgeArea{display:flex!important}.badge{animation:none;transform:none!important;color:#000;background:#fff;border:2px solid #000;box-shadow:none}.nm,.inst{color:#000}}
@@ -156,7 +159,7 @@ form.glass{overflow:visible;z-index:30}
 </div>
 
 <div id="toast"></div>
-<footer>جميع الحقوق محفوظة لدي Karam Mohsen - 01014403294</footer>
+<footer><span>جميع الحقوق محفوظة لدي <bdi dir="ltr">Karam Mohsen</bdi></span><span class="sep"> - </span><bdi dir="ltr" class="ph">01014403294</bdi></footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
